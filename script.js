@@ -1,7 +1,7 @@
 const timer = document.getElementById('timer');
-const date = new Date();
 let hour, minute, seconds;
 setInterval(()=>{
+	const date = new Date();
 	hour = date.getHours();
 	AMPM = hour >= 12 ? 'PM' : 'AM';
 	if(hour == 24) hour = '00';
